@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <Main class="app">
+        <div class="divImg">
+            <div class="filter">
+                <select id="listaPokemon" class="btn1">Nombre</select>
+                <div class="overflow-x-auto" id="pokemonList">
+                    <table class="table">
+                    </table>
+                </div>
+            </div>
+
+
+            <img class="imgpoke" src="/img/imgpokedex.jpeg" alt="Pokedex" width="500px">
+            <div id="pokemonInfo">
+                <h1> <span id="nombre"></span></h1>
+                <img id="imagen" alt="Imagen del Pokémon" src="" width="390" height="390">
+                <p><strong><br></strong> <span id="tipo"></span></p>
+
+                <div class="floatingBox">
+                    <div class="descriptionPokemon">
+                        <h2>Detalles</h2>
+                        <p><strong>Número:</strong> <span id="numero"></span></p>
+                        <p><strong>Habilidades:</strong> <span id="habilidades"></span></p>
+                        <p><strong>Peso:</strong> <span id="peso"></span></p>
+                        <p><strong>Altura:</strong> <span id="altura"></span></p>
+                        <p><strong>Debilidades:</strong> <span id="debilidades"></span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </Main>
+
+
+    <script src="/components/listaPokemon.js"></script>
+    <script src="/components/listaTipo.js"></script>
+</body>
+
+</html>
